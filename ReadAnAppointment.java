@@ -122,7 +122,7 @@ else
 
 public void readRecord()
 {
-int phoneNum;
+long phoneNum;
 String name;
 String email;
 boolean membership;
@@ -132,7 +132,7 @@ String services;
 
 // input the values from the file
 try {
-   phoneNum = input.readInt();
+   phoneNum = input.readLong();
    name = input.readUTF();
    email = input.readUTF();
    membership = input.readBoolean();

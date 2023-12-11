@@ -122,7 +122,7 @@
 
 	   public void addRecord()
 	   {
-	      int PhoneNum = 0;
+	      long PhoneNum = 0;
 	      boolean MemberTemp;
 	      String genderTemp;
 	      String StylistTemp;
@@ -132,10 +132,10 @@
 
 	            // output the values to the file
 	            try {
-	            	PhoneNum = Integer.parseInt( PhoneNumField.getText());
+	            	PhoneNum = Long.parseLong( PhoneNumField.getText());
 
 	               if ( PhoneNum > 0 ) {
-	                  output.writeInt( PhoneNum );
+	                  output.writeLong( PhoneNum );
 	                  output.writeUTF( NameField.getText() );
 	                  output.writeUTF( EmailField.getText() );
 	               

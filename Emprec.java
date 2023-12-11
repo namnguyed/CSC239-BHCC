@@ -2,7 +2,7 @@
 import java.text.*;
 
 public class Emprec implements Emprec_Iface {
-int phoneNum;
+long phoneNum;
 String name;
 String email;  
 boolean membership;
@@ -11,7 +11,7 @@ String stylist;
 String services;
 
 
-public Emprec (int phoneNum, String name, String email, boolean membership,
+public Emprec (long phoneNum, String name, String email, boolean membership,
                  String gender, String stylist, String services)
 {
 
@@ -30,7 +30,7 @@ Emprec ( String phoneNum,String name, String email,String membership,
 {
 
 try {
-this.phoneNum=Integer.parseInt(phoneNum);
+this.phoneNum=Long.parseLong(phoneNum);
 this.name=name;
 this.email=email;
 this.membership=Boolean.valueOf(membership).booleanValue();
